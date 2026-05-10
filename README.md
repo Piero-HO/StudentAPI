@@ -61,37 +61,8 @@ python manage.py runserver
 | POST | /api/students/ |
 | PUT | /api/students/id/ |
 | DELETE | /api/students/id/ |
----
-# Búsqueda
-```bash
-/api/students/?search=piero
-```
----
-# Ejemplos de uso con cURL
-## Obtener cursos
-```bash
-curl http://127.0.0.1:8000/api/courses/
-```
----
-## Crear curso
-```bash
-curl -X POST http://127.0.0.1:8000/api/courses/ \
--H "Content-Type: application/json" \
--d "{\"name\":\"Backend Development\",\"teacher\":\"Carlos Perez\"}"
-```
----
-## Obtener estudiantes
-```bash
-curl http://127.0.0.1:8000/api/students/
-```
----
-## Crear estudiante
-```bash
-curl -X POST http://127.0.0.1:8000/api/students/ \
--H "Content-Type: application/json" \
--d "{\"name\":\"Piero\",\"age\":20,\"email\":\"piero@gmail.com\",\"course\":1}"
-```
----
+
+
 # Capturas
 ## Crear curso
 ![Crear Curso](docs/course_create.png)
